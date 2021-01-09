@@ -29,7 +29,6 @@ namespace CharacterControllerExample
             {
                 return;
             }
-            direction.Normalize();
 
             float distanceToTargetDir = Vector3.Distance(transform.TransformPoint(Vector3.forward), direction);
                 direction = Camera.main.transform.TransformDirection(direction);
