@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Character Data
   m_EditorClassIdentifier: 
   MovementData:
-    MaxSpeed: 50
-    MovementForce: 20
+    MaxSpeed: 500
+    MovementForce: 200
     TurnSpeed: 3
     JumpHeight: 750
   HealthData:
