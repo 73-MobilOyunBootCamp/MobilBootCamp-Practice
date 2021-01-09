@@ -9,6 +9,7 @@ namespace CharacterControllerExample
     /// </summary>
     public class CharacterHealthController : MonoBehaviour
     {
+        
 
     }
 }
