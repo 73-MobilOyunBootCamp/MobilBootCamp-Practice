@@ -28,6 +28,9 @@
               <e p="ICharacterBrain.cs" t="Include" />
               <e p="ICharacterController.cs" t="Include" />
             </e>
+            <e p="ScriptableObject" t="Include">
+              <e p="CharacterData.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Occulision" t="Include">
