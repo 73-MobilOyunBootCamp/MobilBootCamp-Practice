@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace CharacterControllerExample
 {
+    /// <summary>
+    /// Responsible for  Health
+    /// </summary>
     public class CharacterController : MonoBehaviour
     {
 

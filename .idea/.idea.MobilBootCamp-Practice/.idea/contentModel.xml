@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Katagan\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Katagan\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MobilBootCamp-Practice.414127181.00" t="ExcludeRecursive" />
+    <e p="D:\KODLUYORUZ\GENEL\MobilBootCamp-Practice" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CharacterControllerExample" t="Include">
+          <e p="Graphics" t="Include">
+            <e p="Models" t="Include">
+              <e p="Stickman" t="Include">
+                <e p="README.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Character.cs" t="Include" />
+            <e p="CharacterAnimationController.cs" t="Include" />
+            <e p="CharacterBrain.cs" t="Include" />
+            <e p="CharacterController.cs" t="Include" />
+            <e p="CharacterHealthController.cs" t="Include" />
+            <e p="Interface" t="Include">
+              <e p="ICharacterBrain.cs" t="Include" />
+              <e p="ICharacterController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Occulision" t="Include">
+          <e p="Graphics" t="Include">
+            <e p="Sci-Fi Styled Modular Pack" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="MouseLook.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="OptimizeMaterials" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="CubeCreator.cs" t="Include" />
+            <e p="MaterialChanger.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MobilBootCamp-Practice.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

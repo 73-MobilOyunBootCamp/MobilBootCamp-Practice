@@ -4,12 +4,11 @@ using UnityEngine;
 
 namespace CharacterControllerExample
 {
-    /// <summary>
-    /// Responsible for Character
-    /// </summary>
-    public class Character : MonoBehaviour
+
+
+    public class ICharacterBrain : MonoBehaviour
     {
-
+        
     }
-}
 
+}
