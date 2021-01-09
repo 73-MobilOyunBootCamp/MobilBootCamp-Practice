@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2197247008554315587}
   - component: {fileID: 1012728199045016342}
   - component: {fileID: 111662544543945339}
+  - component: {fileID: 5895778364135701819}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de16b3871138a4ab0b8f576050ac6c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterData: {fileID: 0}
   OnCharacterRevive:
     m_PersistentCalls:
       m_Calls: []
@@ -83,7 +83,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &111662544543945339
 CapsuleCollider:
@@ -99,6 +99,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5895778364135701819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5047961705419738433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5481fbb4b653394ea587cde05637b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9212664732144464117
 GameObject:
   m_ObjectHideFlags: 0

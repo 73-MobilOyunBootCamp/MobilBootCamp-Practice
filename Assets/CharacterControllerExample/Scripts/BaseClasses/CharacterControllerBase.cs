@@ -22,7 +22,12 @@ namespace CharacterControllerExample
 
         public virtual void Rotate(Vector3 direction)
         {
-            
+            if (direction == Vector3.zero)
+            {
+                return;
+            }
+            direction.Normalize();
+            float distanceToTargetDir = Vector3.Distance(transform.position, direction);
         }
 
         

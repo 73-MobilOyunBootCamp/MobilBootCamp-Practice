@@ -7,6 +7,7 @@ public class MovementData
 {
     public float MaxSpeed;
     public float MovementForce;
+    public float TurnSpeed;
     public float JumpHeight;
 }
 

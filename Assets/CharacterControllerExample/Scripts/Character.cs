@@ -11,17 +11,18 @@ namespace CharacterControllerExample
     /// </summary>
     public class Character : MonoBehaviour
     {
-        public CharacterData CharacterData;
+        public static CharacterData CharacterData;
 
         #region Events
         public UnityEvent OnCharacterRevive = new UnityEvent();
         public UnityEvent OnCharacterDead = new UnityEvent();
         public UnityEvent OnCharacterJump = new UnityEvent();
         #endregion
-        
-        
-        private bool _isControllable;
-        public bool IsControllable
+
+
+        private static bool _isControllable = true;
+
+        public static bool IsControllable
         {
             get { return _isControllable; }
             set { _isControllable = value; }

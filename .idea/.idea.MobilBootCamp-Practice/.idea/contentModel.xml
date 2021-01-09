@@ -24,6 +24,7 @@
             <e p="CharacterBrain.cs" t="Include" />
             <e p="CharacterController.cs" t="Include" />
             <e p="CharacterHealthController.cs" t="Include" />
+            <e p="CharacterInputController.cs" t="Include" />
             <e p="Interface" t="Include">
               <e p="ICharacterBrain.cs" t="Include" />
               <e p="ICharacterController.cs" t="Include" />
