@@ -5,17 +5,12 @@ using UnityEngine;
 
 namespace CharacterControllerExample
 {
-
-
     public class CharacterInputController : MonoBehaviour
     {
         private ICharacterBrain _characterBrain;
         public ICharacterBrain CharacterBrain
         {
-            get
-            {
-                return (_characterBrain == null) ? _characterBrain = GetComponent<ICharacterBrain>() : _characterBrain;
-            }
+            get => (_characterBrain == null) ? _characterBrain = GetComponent<ICharacterBrain>() : _characterBrain;
         }
         
         private void FixedUpdate()
