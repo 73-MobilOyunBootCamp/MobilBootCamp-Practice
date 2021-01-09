@@ -25,6 +25,8 @@ namespace CharacterControllerExample
 
         public void AnimationUpdate()
         {
+            //todo animation on this method
+            //Animator.SetFloat("Speed", CharacterController.GetCurrentSpeed());
             
         }
     }
