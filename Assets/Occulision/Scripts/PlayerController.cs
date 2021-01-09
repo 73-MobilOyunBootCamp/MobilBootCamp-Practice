@@ -20,4 +20,9 @@ public class PlayerController : MonoBehaviour
 
         CharacterController.SimpleMove(dir * speed);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.name);
+    }
 }
