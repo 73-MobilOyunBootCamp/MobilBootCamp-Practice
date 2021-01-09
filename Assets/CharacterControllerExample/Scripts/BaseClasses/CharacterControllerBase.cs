@@ -8,6 +8,10 @@ namespace CharacterControllerExample
 
     public abstract class CharacterControllerBase : MonoBehaviour, ICharacterController
     {
+        private Character _character;
+        public Character Character => (_character == null) ? _character = GetComponent<Character>() : _character;
+
+
         public virtual void Dispose()
         {
             Debug.Log("Controller Disposed" + gameObject.GetType());

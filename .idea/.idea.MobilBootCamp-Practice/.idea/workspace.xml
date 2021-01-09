@@ -21,10 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="153ab29a-791e-405e-b3c4-2108c86eafe5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MobilBootCamp-Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MobilBootCamp-Practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Prefabs/Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/BaseClasses/CharacterControllerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/BaseClasses/CharacterControllerBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Character.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Interface/ICharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Interface/ICharacterController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +48,11 @@
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterHealthController.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/ScriptableObject/CharacterData.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterInputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/BaseClasses/CharacterControllerBase.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Interface/ICharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/BaseClasses/CharacterControllerBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/CharacterControllerExample/Scripts/CharacterController.cs" />
       </list>
     </option>
@@ -102,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610179990213</updated>
-      <workItem from="1610180000826" duration="5206000" />
+      <workItem from="1610180000826" duration="6581000" />
     </task>
     <servers />
   </component>
