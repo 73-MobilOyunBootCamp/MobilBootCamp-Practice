@@ -4,7 +4,10 @@ using UnityEngine;
 
 namespace CharacterControllerExample
 {
-    public class CharacterController : MonoBehaviour
+    /// <summary>
+    /// Responsible for Movement
+    /// </summary>
+    public class CharacterController : MonoBehaviour, ICharacterController
     {
 
     }

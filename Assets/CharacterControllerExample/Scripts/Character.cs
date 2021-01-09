@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace CharacterControllerExample
 {
+    /// <summary>
+    /// Responsible for Communication
+    /// Character State
+    /// </summary>
     public class Character : MonoBehaviour
     {
 
