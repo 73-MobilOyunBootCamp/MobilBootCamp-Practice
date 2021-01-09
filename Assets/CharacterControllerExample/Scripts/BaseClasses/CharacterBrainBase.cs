@@ -8,6 +8,11 @@ namespace CharacterControllerExample
 
     public abstract class CharacterBrainBase : MonoBehaviour, ICharacterBrain
     {
+        private ICharacterController _characterController;
+        public ICharacterController CharacterController
+        {
+            get { return (_characterController == null) ? _characterController = GetComponent<ICharacterController>() : _characterController; }
+        }
 
         public virtual void Initialize()
         {

@@ -9,6 +9,19 @@ namespace CharacterControllerExample
     /// </summary>
     public class CharacterController : MonoBehaviour
     {
+        private bool _isControllable;
+        public bool IsControllable
+        {
+            get { return _isControllable; }
+            set { _isControllable = value; }
+        }
+
+        private bool _isDead;
+        public bool IsDead
+        {
+            get{ return _isDead; }
+            set { _isDead = value; }
+        }
 
     }
 }
