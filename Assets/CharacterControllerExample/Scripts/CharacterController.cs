@@ -16,7 +16,7 @@ namespace CharacterControllerExample
         {
             if (!Character.IsControlable)
                 return;
-
+            direction.Normalize();
             Rotate(direction);
             if (Rigidbody.velocity.magnitude > Character.CharacterData.MovementData.MaxSpeed)
                 return;
