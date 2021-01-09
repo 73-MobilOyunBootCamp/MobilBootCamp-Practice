@@ -6,8 +6,11 @@ namespace CharacterControllerExample
 {
 
 
-    public class ICharacterController : MonoBehaviour
+    public interface ICharacterController
     {
-        
+        void Initialize();
+        void Move(Vector3 direction);
+        void Rotate(Vector3 direction);
+        void Dispose();
     }
 }

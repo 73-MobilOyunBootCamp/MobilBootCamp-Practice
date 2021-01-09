@@ -6,7 +6,7 @@ namespace CharacterControllerExample
 {
 
 
-    public class ICharacterBrain : MonoBehaviour
+    public interface ICharacterBrain
     {
         
     }
