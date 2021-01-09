@@ -13,6 +13,9 @@ namespace CharacterControllerExample
             Debug.Log("Controller Disposed" + gameObject.GetType());
         }
 
+
+        public abstract float CurrentSpeed();
+
         public virtual void Initialize()
         {
             Debug.Log("Controller Initialize" + gameObject.GetType());

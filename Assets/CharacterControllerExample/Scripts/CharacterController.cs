@@ -15,20 +15,22 @@ namespace CharacterControllerExample
         {
             get { return (_rigidbody == null) ? _rigidbody = GetComponent<Rigidbody>() : _rigidbody; }
         }
-        
+
+        public override float CurrentSpeed()
+        {
+            return Rigidbody.velocity.magnitude;
+        }
+
         public override void Move(Vector3 direction)
         {
             if (!Character.IsControllable)
-            {
                 return;
-            }
-            
+
             Rotate(direction);
             if (Rigidbody.velocity.magnitude > Character.CharacterData.MovementData.MaxSpeed)
-            {
                 return;
-            }
-            Rigidbody.AddForce(direction * Character.CharacterData.MovementData.MovementForce * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            //Rigidbody.AddForce(direction * Character.CharacterData.MovementData.MovementForce * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            Rigidbody.velocity = direction * Character.CharacterData.MovementData.MovementForce * Time.fixedDeltaTime;
         }
     }
 }

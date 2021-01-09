@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Boss Character Data
   m_EditorClassIdentifier: 
   MovementData:
-    MaxSpeed: 0
-    MovementForce: 0
+    MaxSpeed: 30
+    MovementForce: 10
+    TurnSpeed: 1
     JumpHeight: 0
   HealthData:
-    MaxHealth: 0
-    InitialDamage: 0
+    MaxHealth: 10
+    InitialDamage: 1
