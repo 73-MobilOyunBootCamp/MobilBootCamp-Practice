@@ -20,4 +20,10 @@ public class PlayerController : MonoBehaviour
 
         CharacterController.SimpleMove(dir * speed);
     }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.collider.name);
+    }
 }
