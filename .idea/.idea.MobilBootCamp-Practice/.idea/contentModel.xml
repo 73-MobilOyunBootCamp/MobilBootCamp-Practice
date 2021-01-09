@@ -15,6 +15,10 @@
             </e>
           </e>
           <e p="Scripts" t="Include">
+            <e p="BaseClasses" t="Include">
+              <e p="CharacterBrainBase.cs" t="Include" />
+              <e p="CharacterControllerBase.cs" t="Include" />
+            </e>
             <e p="Character.cs" t="Include" />
             <e p="CharacterAnimationController.cs" t="Include" />
             <e p="CharacterBrain.cs" t="Include" />
