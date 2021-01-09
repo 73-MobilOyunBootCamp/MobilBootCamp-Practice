@@ -7,9 +7,29 @@ namespace CharacterControllerExample
     /// <summary>
     /// Responsible for Movement
     /// </summary>
-    public class CharacterController : MonoBehaviour
+    public class CharacterController : CharacterControllerBase
     {
+        private Rigidbody rigidbody;
+        public Rigidbody Rigidbody { get { return (rigidbody == null) ? rigidbody = GetComponent<Rigidbody>() : rigidbody; } }
 
+        public override void Move(Vector3 direction)
+        {
+            if (!Character.IsControlable)
+                return;
+
+            Rotate(direction);
+            //if (Rigidbody.velocity.magnitude > Character.CharacterData.MovementData.MaxSpeed)
+            //    return;
+
+            //Rigidbody.AddForce(direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime, ForceMode.VelocityChange);
+
+            Rigidbody.velocity = direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime;
+        }
+
+        public override float GetCurrentSpeed()
+        {
+            return Rigidbody.velocity.magnitude;
+        }
     }
 }
 

@@ -6,6 +6,9 @@ namespace CharacterControllerExample
 {
     public abstract class CharacterBrainBase : MonoBehaviour, ICharacterBrain
     {
+        private ICharacterController characterController;
+        public ICharacterController CharacterController { get { return (characterController == null) ? characterController = GetComponent<ICharacterController>() : characterController; } }
+
         public virtual void Dispose()
         {
             Debug.Log("Brain Disposed " + gameObject.GetType());

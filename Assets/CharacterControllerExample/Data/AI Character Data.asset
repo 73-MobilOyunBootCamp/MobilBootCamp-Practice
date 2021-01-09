@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adf5e7c3802a48faa5a0be5032a65a7, type: 3}
+  m_Name: AI Character Data
+  m_EditorClassIdentifier: 
+  MovementData:
+    MaxSpeed: 50
+    MovmeentForce: 20
+    TurnSpeed: 3
+    JumpHeight: 750
+  HealthData:
+    MaxHealth: 1
+    InitialDamage: 1

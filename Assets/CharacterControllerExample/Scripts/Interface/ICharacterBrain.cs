@@ -7,6 +7,8 @@ namespace CharacterControllerExample
 {
     public interface ICharacterBrain
     {
+        ICharacterController CharacterController { get; }
+
         void Intialize();
         void Logic();
         void Dispose();

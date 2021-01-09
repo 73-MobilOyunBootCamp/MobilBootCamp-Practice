@@ -6,6 +6,8 @@ namespace CharacterControllerExample
 {
     public interface ICharacterController
     {
+        float GetCurrentSpeed();
+
         void Intialize();
         void Move(Vector3 direction);
         void Rotate(Vector3 direction);
