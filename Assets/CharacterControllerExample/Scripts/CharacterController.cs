@@ -7,7 +7,7 @@ namespace CharacterControllerExample
     /// <summary>
     /// Responsible for Movement
     /// </summary>
-    public class CharacterController : MonoBehaviour, ICharacterController
+    public class CharacterController : MonoBehaviour
     {
 
     }

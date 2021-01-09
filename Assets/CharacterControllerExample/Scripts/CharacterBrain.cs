@@ -7,7 +7,7 @@ namespace CharacterControllerExample
     /// <summary>
     /// Responsible for Logic
     /// </summary>
-    public class CharacterBrain : MonoBehaviour, ICharacterBrain
+    public class CharacterBrain : MonoBehaviour
     {
 
     }
