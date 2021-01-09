@@ -18,12 +18,12 @@ namespace CharacterControllerExample
                 return;
 
             Rotate(direction);
-            //if (Rigidbody.velocity.magnitude > Character.CharacterData.MovementData.MaxSpeed)
-            //    return;
+            if (Rigidbody.velocity.magnitude > Character.CharacterData.MovementData.MaxSpeed)
+                return;
 
-            //Rigidbody.AddForce(direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            Rigidbody.AddForce(direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime, ForceMode.VelocityChange);
 
-            Rigidbody.velocity = direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime;
+            //Rigidbody.velocity = direction * Character.CharacterData.MovementData.MovmeentForce * Time.fixedDeltaTime;
         }
 
         public override float GetCurrentSpeed()
