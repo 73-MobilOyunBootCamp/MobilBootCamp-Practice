@@ -10,6 +10,14 @@ namespace CharacterControllerExample
     public class CharacterHealthController : MonoBehaviour
     {
 
+        private Character character;
+        public Character Character { get { return (character == null) ? character = GetComponent<Character>() : character; } }
+
+        public void Damage()
+        {
+            Character.OnCharacterDie.Invoke();
+            Debug.Log("Character " + Character.CharacterType + " Died");
+        }
     }
 }
 

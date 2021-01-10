@@ -49,6 +49,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterData: {fileID: 0}
+  CharacterCurrentData:
+    CurrentCoin: 0
+    CurrentHealth: 0
+    MovementData:
+      MaxSpeed: 0
+      MovmeentForce: 0
+      TurnSpeed: 0
+      JumpHeight: 0
+    HealthData:
+      MaxHealth: 0
+      InitialDamage: 0
+  CharacterType: 0
   OnCharacterRevive:
     m_PersistentCalls:
       m_Calls: []

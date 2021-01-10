@@ -9,6 +9,9 @@ namespace CharacterControllerExample
         private ICharacterController characterController;
         public ICharacterController CharacterController { get { return (characterController == null) ? characterController = GetComponent<ICharacterController>() : characterController; } }
 
+        private Character character;
+        public Character Character { get { return (character == null) ? character = GetComponent<Character>() : character; } }
+
         public virtual void Dispose()
         {
             Debug.Log("Brain Disposed " + gameObject.GetType());

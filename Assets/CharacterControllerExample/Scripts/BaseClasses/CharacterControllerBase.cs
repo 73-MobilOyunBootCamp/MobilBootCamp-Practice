@@ -21,7 +21,10 @@ namespace CharacterControllerExample
             Debug.Log("Controller Intialized " + gameObject.GetType());
         }
 
-        public abstract void Move(Vector3 direction);
+        public virtual void Move(Vector3 direction)
+        {
+
+        }
 
         public virtual void Rotate(Vector3 direction)
         {
@@ -29,12 +32,12 @@ namespace CharacterControllerExample
             {
                 return;
             }
-
+            direction.Normalize();
             float distanceToTargetDir = Vector3.Distance(transform.TransformPoint(Vector3.forward), direction);
-                direction = Camera.main.transform.TransformDirection(direction);
+                //direction = Camera.main.transform.TransformDirection(direction);
 
             direction.y = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), (Character.CharacterData.MovementData.TurnSpeed * Mathf.Clamp(distanceToTargetDir, 0f, 2f)) * Time.deltaTime);;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), (Character.CharacterCurrentData.MovementData.TurnSpeed * Mathf.Clamp(distanceToTargetDir, 0f, 2f)) * Time.deltaTime);;
         }
 
         public abstract float GetCurrentSpeed();

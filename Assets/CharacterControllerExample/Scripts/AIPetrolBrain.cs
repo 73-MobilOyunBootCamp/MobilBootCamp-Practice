@@ -13,6 +13,9 @@ namespace CharacterControllerExample
         public List<Transform> PetrolPoints;
         private int currentPetrolPoint;
 
+        private float lastAttackTime;
+        private float attackRate = 4f;
+
         private void Start()
         {
             Intialize();
@@ -24,14 +27,17 @@ namespace CharacterControllerExample
             NavMeshAgent.updatePosition = false;
             NavMeshAgent.updateRotation = false;
             NavMeshAgent.SetDestination(PetrolPoints[currentPetrolPoint].position);
+
+            Animator animator = GetComponentInChildren<Animator>();
+            animator.SetLayerWeight(1, 1);
         }
 
 
         public override void Logic()
         {
-            IsDestinationReached();
 
-           
+            Attack();
+            IsDestinationReached();
 
             float distanceToAgent = Vector3.Distance(transform.position, NavMeshAgent.nextPosition);
 
@@ -48,6 +54,16 @@ namespace CharacterControllerExample
 
             if(distanceToAgent > 0.2f)
                 CharacterController.Move(direction);
+        }
+
+
+        private void Attack()
+        {
+            if (lastAttackTime > Time.time)
+                return;
+
+            lastAttackTime = Time.time + attackRate;
+            Character.OnCharacterAttack.Invoke();
         }
 
 

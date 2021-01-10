@@ -19,6 +19,21 @@ namespace CharacterControllerExample
         Animator animator;
         Animator Animator { get { return (animator == null) ? animator = GetComponent<Animator>() : animator; } }
 
+        private void OnEnable()
+        {
+            Character.OnCharacterAttack.AddListener(OnAttack);
+            Character.OnCharacterDie.AddListener(() => Animator.enabled = false);
+            Character.OnCharacterRevive.AddListener(() => Animator.enabled = true);
+        }
+
+        private void OnDisable()
+        {
+            Character.OnCharacterAttack.RemoveListener(OnAttack);
+
+            Character.OnCharacterDie.AddListener(() => Animator.enabled = false);
+            Character.OnCharacterRevive.AddListener(() => Animator.enabled = true);
+        }
+
         private void Update()
         {
             UpdateAnimations();
@@ -27,6 +42,11 @@ namespace CharacterControllerExample
         private void UpdateAnimations()
         {
             Animator.SetFloat("Speed", CharacterController.GetCurrentSpeed());
+        }
+
+        private void OnAttack()
+        {
+            Animator.SetTrigger("Attack");
         }
     }
 }
